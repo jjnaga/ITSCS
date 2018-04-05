@@ -1,0 +1,59 @@
+#clockcard {
+  display: grid;
+  grid-template-rows: repeat(10, 100px);
+  grid-template-columns: repeat(13, 100px);
+}
+
+#mainclock {
+  display: flex;
+  grid-column: 1 / 9;
+  grid-row: 1 / 5;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#mainclocktext {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+}
+
+#mainclock >  div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+#coworkers {
+  margin-right: 12px;
+}
+
+#clockinButton {
+  align-self: flex-end;
+}
+
+#comment {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+#nametext {
+  margin-left: 60px;
+  margin-bottom: -18px;
+  margin-top: 18px;
+}
+
+#sideclock {
+  grid-column: 9 / 13;
+  grid-row: 1 / 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+
+

@@ -1,0 +1,160 @@
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Raleway', 'Nunito Sans', sans-serif;
+  background-color: hsl(0, 0%, 93%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+textarea {
+  font-family: inherit;
+  border:  none;
+  outline: none;
+  resize: none;
+  padding: 7px 20px 7px 13px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #f1f3f6;
+  color: #32325d;
+  border-radius: 4px;
+    -webkit-transition: background-color .1s ease-in,color .1s ease-in;
+  transition: background-color .1s ease-in,color .1s ease-in;
+  height: 100px;
+  width: 400px;
+}
+
+textarea:focus {
+  background-color: transparent;
+  color: #4d4e6d!important;
+  box-shadow: 0 0 0 1px #e4effa;
+}
+
+.contain {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.muted-text {
+  line-height: 1;
+  font-weight: 300;
+  font-size: 13px;
+  color: hsl(0, 0%, 37%)
+}
+
+.body-text {
+  color: hsl(0, 0%, 42%);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.title-text {
+  color: #222;
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+
+.card {
+  background-color:  #fff;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  border-radius: 4px;
+}
+
+.top-stripe {
+    border-top: 6px solid #408AF8;
+}
+
+.clockicon {
+  width: 48px;
+}
+
+.commonButton {
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  background: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  color: #6772e5;
+  text-decoration: none;
+  transition: all .15s ease;
+  text-shadow: 0 2px 3px rgba(0,0,0,.15);
+}
+
+.commonButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.commonButton:active {
+  transform: translateY(1px);
+}
+
+.clockimg {
+  width: 250px;
+}
+
+.clocktime {
+  width: 18px;
+}
+
+#clockcard {
+  margin: 15px 0px 0px 15px;
+}
+
+#clockinButton {
+  color: #fff;
+  background: linear-gradient(180deg, #f5515f 0%,#A1051D 100%);
+}
+
+#clockedin {
+  color: #24b47e;
+}
+
+#comment {
+ font-style: italic;
+}
+
+#commentbold {
+  color: #1770f4;
+  font-size: 16px;
+}
+
+#timestamp {
+  color: #5a77f3;
+}
+
+#sideclock {
+  background-color: #1179BF;
+  border-radius: 0px 4px 4px 0px;
+  color: #fff;
+}
+
+#mainclock {
+  border-radius: 4px 0px 0px 4px;
+}
+
+#timestamptext {
+  text-align: center;
+}
