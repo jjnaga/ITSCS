@@ -134,6 +134,14 @@ textarea:focus {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
 }
 
+.sideEmphasis {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-style: italic;
+  text-align: right;
+}
+
 #clockcard {
   margin: 15px 0px 0px 15px;
 }
@@ -165,10 +173,19 @@ textarea:focus {
   border-radius: 0px 4px 4px 0px;
 }
 
+#sideclock > div:nth-child(1) {
+  text-align: center;
+}
+
 #mainclock {
   border-radius: 4px 0px 0px 4px;
 }
 
 #timestamptext {
   text-align: center;
+}
+
+#numdate {
+  font-size: 18px;
+  font-weight: 400;
 }

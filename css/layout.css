@@ -52,8 +52,12 @@
   grid-row: 1 / 5;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between
+}
+
+#sidedate {
+  margin-bottom: 12px;
 }
 
 
