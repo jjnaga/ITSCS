@@ -119,6 +119,21 @@ textarea:focus {
   width: 18px;
 }
 
+.sideheading {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .05em;
+}
+
+.sideicon {
+  width: 24px;
+}
+
+.white-text {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+}
+
 #clockcard {
   margin: 15px 0px 0px 15px;
 }
@@ -148,7 +163,6 @@ textarea:focus {
 #sideclock {
   background-color: #1179BF;
   border-radius: 0px 4px 4px 0px;
-  color: #fff;
 }
 
 #mainclock {

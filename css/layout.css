@@ -51,7 +51,8 @@
   grid-column: 9 / 13;
   grid-row: 1 / 5;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between
 }
 
