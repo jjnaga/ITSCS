@@ -10,9 +10,39 @@
     <link rel="stylesheet" href="css/layout.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+        <!-- real time ticker -->
+        <script type="text/javascript">
+            function updateClock() {
+              var currentTime = new Date();
+              var currentHours = currentTime.getHours();
+              var currentMinutes = currentTime.getMinutes();
+              var currentSeconds = currentTime.getSeconds();
+
+              // Pad the minutes and seconds with leading zeros, if required
+              currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+              currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+
+              // Choose either "AM" or "PM" as appropriate
+              var timeOfDay = (currentHours < 12) ? "AM" : "PM";
+
+              // Convert the hours component to 12-hour format if needed
+              currentHours = (currentHours > 12) ? currentHours - 12 : currentHours;
+
+              // Convert an hours component of "0" to "12"
+              currentHours = (currentHours == 0) ? 12 : currentHours;
+
+              // Compose the string for display
+              var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds;
+
+              // Update the time display
+              document.getElementById("timestamp").firstChild.nodeValue = currentTimeString;
+            }
+        </script>
+        <!-- /real time ticker -->
   </head>
 
-  <body>
+  <body onload="updateClock(); setInterval('updateClock()', 1000 )">
     <div class="contain">
       <section id='clockcard'>
         <div class="card" id="mainclock">
@@ -25,8 +55,8 @@
               </h2>
             </div>
             <div>
-                <div class="muted-text" id="timestamptext">Your last timestamp:</div>
-                <div class="title-text" id="timestamp">9:30:05</div>
+                <div class="muted-text" id="timestamptext">The current time:</div>
+                <div class="title-text numbers" id="timestamp">&nbsp;</div>
             </div>
             <div>
                 <div class="body-text" id="comment">Have a weird clock-in/out?
@@ -37,26 +67,27 @@
           </div>
           <div>
             <img src="img/coworkers.svg" class="clockimg" id="coworkers"></img>
-            <a href="#" class="commonButton" id="clockinButton">
-              Clock Out
-            </a>
+            <div id="clockButton">
+              <div class="muted-text" style="margin-bottom: 6px; text-align: center;">Done with your shift?</div>
+              <a href="#" class="commonButton" id="clockinButton">
+                Clock Out
+              </a>
+            </div>
+            
           </div>
         </div>
 
         <div class="card" id="sideclock">
-          <div class="sideheading white-text"><i>Need more details?</i></div>
-          <div>
-            <div class="white-text" id="sidedate">Date:</div>
-            <div class="white-text sideEmphasis">Wednesday</div>
-            <div class="white-text sideEmphasis" id="numdate">4/4/2018</div>
+          <div class="sideheading white-text">Last Clock-Out</div>
+          <div class="textcenter">
+            <div class="white-text sideEmphasis">Your Timestamp:</div>
+            <div class="white-text">Wednesday</div>
+            <div class="white-text numbers">9:30:43</div>
+            <div class="white-text numbers">4/4/2018</div>
           </div>
-          <div>
-            <div class="white-text">From:</div>
-          </div>
-          <div>
-            <div class="white-text">Your Comments:</div>
-            <div class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam</div>
+          <div id="sidecomments">
+            <div class="white-text sideEmphasis textcenter">Your Comments:</div>
+            <div class="white-text commenttext">My shift normally started at 9:30, but I came in late and clocked in at 9:45 today. Approved by Mike.</div>
           </div>
           
           

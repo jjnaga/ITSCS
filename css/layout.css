@@ -32,7 +32,7 @@
   margin-right: 12px;
 }
 
-#clockinButton {
+#clockButton {
   align-self: flex-end;
 }
 
@@ -48,7 +48,7 @@
 }
 
 #sideclock {
-  grid-column: 9 / 13;
+  grid-column: 9 / 12;
   grid-row: 1 / 5;
   display: flex;
   flex-direction: column;
