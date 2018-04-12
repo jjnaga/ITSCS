@@ -8,8 +8,9 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <!-- real time ticker -->
         <script type="text/javascript">
@@ -60,7 +61,7 @@
             </div>
             <div>
                 <div class="body-text" id="comment">Have a weird clock-in/out?
-                  <b id="commentbold">Write a comment!</b>
+                  <span id="commentbold">Write a comment!</span>
                 </div>
                 <textarea class="clockcomments" id="clockcomment" placeholder="Write your comment here!"></textarea>
             </div>
@@ -78,20 +79,35 @@
         </div>
 
         <div class="card" id="sideclock">
-          <div class="sideheading white-text">Last Clock-Out</div>
-          <div class="textcenter">
+          <div class="sideheading white-text">Last Clock-In</div>
+          <div class="sidestamp">
             <div class="white-text sideEmphasis">Your Timestamp:</div>
             <div class="white-text">Wednesday</div>
             <div class="white-text numbers">9:30:43</div>
             <div class="white-text numbers">4/4/2018</div>
           </div>
           <div id="sidecomments">
-            <div class="white-text sideEmphasis textcenter">Your Comments:</div>
+            <div class="white-text sideEmphasis">Your Comments:</div>
             <div class="white-text commenttext">My shift normally started at 9:30, but I came in late and clocked in at 9:45 today. Approved by Mike.</div>
           </div>
-          
-          
         </div>
+
+        <div id="sidelaptop">
+          <div id="laptop"></div>
+        </div>
+
+        <!-- 
+        <div id="device">
+          <div class="laptop">
+            <span class="shadow"></span>
+            <span class="lid"></span>
+            <div class="screen">
+            </div>
+          </div>
+        </div>
+
+      -->
+
       </section>
     </div>
   </body>
