@@ -1,13 +1,13 @@
 #clockcard {
   display: grid;
-  grid-template-rows: repeat(10, 100px);
-  grid-template-columns: repeat(20, 4.9vw);
+  grid-template-rows: repeat(15, 100px);
+  grid-template-columns: repeat(20, 5vw);
 }
 
 #mainclock {
   display: flex;
-  grid-column: 1 / 9;
-  grid-row: 1 / 5;
+  grid-column: 2 / 10;
+  grid-row: 2 / 6;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -48,8 +48,8 @@
 }
 
 #sideclock {
-  grid-column: 9 / 12;
-  grid-row: 1 / 5;
+  grid-column: 10 / 13;
+  grid-row: 2 / 6;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -61,10 +61,10 @@
 }
 
 #laptop {
-  height: 600px;
-  width: 260px;
+  height: 720px;
+  width: 720px;
   position: absolute;
-  background-image: url('../img/laptop2.svg');
+  background-image: url('../img/laptop3.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -72,11 +72,25 @@
 
 #sidelaptop {
   position: absolute;
-  right: 0;
-  height: 600px;
-  width: 260px;
-  top: 70px;
+  right: 12px;
+  height: 720px;
+  width: 720px;
+  top: 60px;
+  transform: rotateY(180deg);
 }
 
+#belowcomments {
+  grid-row: 7 / 12;
+  grid-column: 3 / 12;
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+#whitebackground {
+  background-color: #fff;
+  grid-column: 1 / -1;
+  grid-row: 7 / -1;
+}
 
 
