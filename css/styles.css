@@ -242,6 +242,10 @@ li:before {
   text-align: center;
 }
 
+#belowcomments > img:nth-child(1) {
+  width: 325px;
+}
+
 /* ---------------------------------------- LAPTOP SECTION ------------------------------------------*/
 @media (min-width: 880px) {
   .laptop {
