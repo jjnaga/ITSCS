@@ -192,15 +192,24 @@ li:before {
   color: hsl(0, 0%, 42%);
   font-weight: 300;
   font-size: 14px;
+  
 }
 
-.exampletime {
- font-style: italic;
- font-size: 16px;
-}
-
-.example {
+.bottomexample {
   font-size: 16px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 2em;
+}
+
+.bottomexample::before {
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  top: 6px;
+  left: 0;
+  position: absolute;
+  background: url('../img/arrow-outline-left.svg')
 }
 
 #clockinButton {
