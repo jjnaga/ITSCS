@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Raleway', 'Nunito Sans', sans-serif;
   background-color: hsl(0, 0%, 93%);
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -193,6 +194,15 @@ li:before {
   font-size: 14px;
 }
 
+.exampletime {
+ font-style: italic;
+ font-size: 16px;
+}
+
+.example {
+  font-size: 16px;
+}
+
 #clockinButton {
   color: #fff;
   background: linear-gradient(180deg, #f5515f 0%,#A1051D 100%);
@@ -243,79 +253,34 @@ li:before {
 }
 
 #belowcomments > img:nth-child(1) {
-  width: 325px;
+  width: 275px;
 }
 
-/* ---------------------------------------- LAPTOP SECTION ------------------------------------------*/
-@media (min-width: 880px) {
-  .laptop {
-    left: 0;
-    margin: 0;
-  }
-
-  .laptop .shadow {
-    will-change: transform;
-  }
+#commentexamples >img:nth-child(2) {
+  width: 275px;
 }
 
-@media (min-width: 670px) {
-  .laptop {
-    transform: none;
-    left: calc(50% - 292px);
-  }
-}
-
-#device .laptop {
-  width: 550px;
-  height: 400px;
-}
-
-#device .laptop .shadow {
-  height: 350px;
-}
-
-.laptop .shadow {
-  left: 17px;
-  right: 17px;
-  top: 40px;
-  height: 490px;
-  background: #7692b3;
-  opacity: .9;
-  filter: blur(30px);
-}
-
-.laptop {
+#reprimand {
   position: relative;
+  padding-left: 2em;
+  margin-top: 18px;
+  line-height: 1.5;
 }
 
-.laptop .screen {
-  top: 24px;
-  bottom: 35px;
-  left: 17px;
-  right: 17px;
-  border-radius: 4px;
-  box-shadow: -1px 1px 6px rgba(171,183,204,.2);
-  background: #f2f6fa;
-}
-
-.laptop * {
+#reprimand::before {
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
   position: absolute;
+  background: url('../img/exclamation-outline.svg');
 }
 
-.laptop .lid {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg,#e5ebf2,#f3f8fb);
-  border-radius: 20px;
-  box-shadow: inset 1px -4px 6px rgba(145,161,181,.3);
+#commentxborder {
+  border-bottom: 2px solid #f6f9fc;
 }
 
-.laptop .screen {
-  top: 24px;
-  bottom: 35px;
-  left: 17px;
-  right: 17px;
-  border-radius: 4px;
-  box-shadow: -1px 1px 6px rgba(171,183,204,.2);
-  background: #f2f6fa;
+#commentyborder {
+  border-left: 2px solid #f6f9fc;
 }
