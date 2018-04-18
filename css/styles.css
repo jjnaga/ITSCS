@@ -188,11 +188,20 @@ li:before {
   font-style: italic;
 }
 
+.commentsubheading {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.commentsubheading > b {
+  font-weight: 700;
+}
+
 .bottommuted {
   color: hsl(0, 0%, 42%);
   font-weight: 300;
   font-size: 14px;
-  
 }
 
 .bottomexample {
@@ -200,16 +209,17 @@ li:before {
   margin-bottom: 12px;
   position: relative;
   padding-left: 2em;
+  font-style: italic;
 }
 
 .bottomexample::before {
   content: ' ';
   width: 20px;
   height: 20px;
-  top: 6px;
+  top: 4px;
   left: 0;
   position: absolute;
-  background: url('../img/arrow-outline-left.svg')
+  background: url('../img/arrow-outline-right.svg')
 }
 
 #clockinButton {
@@ -287,9 +297,14 @@ li:before {
 }
 
 #commentxborder {
-  border-bottom: 2px solid #f6f9fc;
+  border-bottom: 3px solid #f6f9fc;
 }
 
 #commentyborder {
-  border-left: 2px solid #f6f9fc;
+  border-left: 3px solid #f6f9fc;
+}
+
+#warning > img:nth-child(1) {
+  width: 275px;
+  margi-left: 37px;
 }
