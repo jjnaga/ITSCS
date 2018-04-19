@@ -108,7 +108,12 @@
               <li>Your normal working hours.</li>
               <li>Which approving staff member, if any.</li>
             </ul>
-            <div class="bottommuted" id="reprimand">You may be subject to reprimand if clocking in/out outside of your shift unless valid comments are made.</div>
+            <div class="bottommuted" id="reprimand">
+              You may be subject to reprimand if clocking in/out outside of your shift unless valid comments are made. 
+            </div>
+            <div class="bottommuted" id="falsify">
+               Clocking in/out from an unauthorized device without checking with staff will be viewed as an attempt to falsify work hours.
+            </div>
           </div>
         </div>
 
@@ -129,14 +134,33 @@
           <img src="img/commentexample.svg"></img>
         </div>
 
-        <span id="commentxborder"></span>
+      <!--  <span id="commentxborder"></span> -->
         <span id="commentyborder"></span>
 
-        <div id="warning">
-          <img src="img/alert.svg"></img>
-          <div class="body-text">An attempt to clock in or out from an unauthorized computer without first checking with a Help Desk Supervisor will be viewed
-          as an attempt to falsify the work hours being clocked. Any attempt to forge or falsify work hours will be subject to reprimands
-          which include possible termination.</div>
+        <span id="coolgraybg"></span>
+
+        <div id="timesheets">
+          <img src="img/timesheet.svg"></img>
+          <h1 class='section-title' style="align-self: center;">View your Timesheets</h1>
+
+          <div id="timesheetcards">
+            <div class="card">
+              <div class="muted-text">Show:</div>
+              <select>
+                <option>All Actions</option>
+                <option>Clock-Ins</option>
+                <option>Clock-Outs</option>
+              </select>
+              <input type="radio">
+              <input type="radio">
+            </div>
+            <div class="card">
+              <div class="muted-text">Printable timesheet including this date:</div>
+              <input type="text">
+              <div class="muted-text">(mm/dd/yyyy)</div>
+              <button>Show</button>
+            </div>
+          </div>
         </div>
 
       </section>

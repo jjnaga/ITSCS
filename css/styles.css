@@ -72,7 +72,7 @@ li:before {
 
 .body-text {
   color: hsl(0, 0%, 37%);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -222,6 +222,19 @@ li:before {
   background: url('../img/arrow-outline-right.svg')
 }
 
+.section-title {
+  font-size: 34px;
+  font-weight: 500;
+  color: #32325d;
+  margin-top: 24px;
+  letter-spacing: .1rem;
+  margin-bottom: 24px;
+}
+
+#timesheetinfo {
+  max-width: 1160px;
+}
+
 #clockinButton {
   color: #fff;
   background: linear-gradient(180deg, #f5515f 0%,#A1051D 100%);
@@ -296,15 +309,16 @@ li:before {
   background: url('../img/exclamation-outline.svg');
 }
 
+#falsify {
+  line-height: 1.5;
+  margin-top: 12px;
+  padding-left: 2em;
+}
+
 #commentxborder {
   border-bottom: 3px solid #f6f9fc;
 }
 
 #commentyborder {
   border-left: 3px solid #f6f9fc;
-}
-
-#warning > img:nth-child(1) {
-  width: 275px;
-  margi-left: 37px;
 }
