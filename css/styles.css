@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+p {
+  margin: 0px 0px 12px 0px;
+}
+
 textarea {
   font-family: inherit;
   border:  none;
@@ -38,6 +42,112 @@ textarea:focus {
   background-color: transparent;
   color: #4d4e6d!important;
   box-shadow: 0 0 0 1px #e4effa;
+}
+
+input[type="text"] {
+  font-family: inherit;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #f1f3f6;
+  color: #323325;
+  -webkit-transition: background-color .1s ease-in,color .1s ease-in;
+  transition: background-color .1s ease-in,color .1s ease-in;
+  height: 30px;
+}
+
+input[type="text"]:focus {
+  background-color: transparent;
+  color: #4d4e6d!important;
+  box-shadow: 0 0 0 1px #e4effa;
+}
+
+select {
+  border: 1px solid #eee;
+  width: 100%;
+  color: #111;
+  font-family: inherit;
+  font-weight: 400;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  background-color: #f1f3f6;
+  outline: 0;
+  background-image: url("../img/select.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: .8em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+[type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
+    position: absolute;
+    visibility: hidden;
+}
+
+[type="checkbox"], [type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="checkbox"] + label {
+    position: relative;
+    padding-left: 2em;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: .9em;
+    margin-right: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    z-index: 0;
+    border: 1px solid #666;
+    border-radius: 1px;
+    margin-top: 4px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+[type="checkbox"]:checked + label::before {
+    top: -8px;
+    left: -2px;
+    width: 10px;
+    height: 18px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #06d19c;
+    border-bottom: 2px solid #06d19c;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+label {
+  display: block;
+  text-align: left;
 }
 
 ul, ol {
@@ -92,6 +202,13 @@ li:before {
   border-radius: 4px;
 }
 
+.footercard {
+  background-color:  #fff;
+  padding: 40px 40px 40px 120px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  border-radius: 4px;
+}
+
 .top-stripe {
     border-top: 6px solid #408AF8;
 }
@@ -114,7 +231,7 @@ li:before {
   background: #fff;
   border-radius: 4px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .13em;
   color: #6772e5;
@@ -231,6 +348,17 @@ li:before {
   margin-bottom: 24px;
 }
 
+.sidecardimg {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: -30px;
+}
+
+.verticalradio {
+  display: block;
+}
+
 #timesheetinfo {
   max-width: 1160px;
 }
@@ -321,4 +449,24 @@ li:before {
 
 #commentyborder {
   border-left: 3px solid #f6f9fc;
+}
+
+#timesheetheading {
+  color: #2fb7e4;
+}
+
+#printableheading {
+  color: #b76ac4;
+}
+
+#showbutton {
+  text-align: center;
+  color: #fff;
+  background:linear-gradient(180deg, #0fd2f4 0%,#099be6 100%);
+}
+
+#printbutton {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg,#fca7e2 0%, #ed79ca 100%);           
 }

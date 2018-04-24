@@ -144,21 +144,34 @@
           <h1 class='section-title' style="align-self: center;">View your Timesheets</h1>
 
           <div id="timesheetcards">
-            <div class="card">
-              <div class="muted-text">Show:</div>
-              <select>
-                <option>All Actions</option>
-                <option>Clock-Ins</option>
-                <option>Clock-Outs</option>
-              </select>
-              <input type="radio">
-              <input type="radio">
+            <div class="footercard">
+              <img src="img/show-timesheet.svg" class="sidecardimg"></img>
+              <div class="bottomemphasis" id="timesheetheading">Clock-In/Out History</div>
+              <div id="showTInputs">
+                <input type="text" placeholder="(mm/dd/yyyy)">
+                <select>
+                  <option>All Actions</option>
+                  <option>Clock-Ins</option>
+                  <option>Clock-Outs</option>
+                </select>
+              </div>
+              
+              <div style="margin-bottom: 12px;">
+                <input type="checkbox" name="display" value="IP" id="displayIP">
+                <label for="displayIP">Display IP</label>
+                <input type="checkbox" name="display" value="comment" id="displayComments">
+                <label for="displayComments">Display Comments</label>
+              </div>
+              <a href='#' class="commonButton" id="showbutton">Get History</a>
             </div>
-            <div class="card">
-              <div class="muted-text">Printable timesheet including this date:</div>
-              <input type="text">
-              <div class="muted-text">(mm/dd/yyyy)</div>
-              <button>Show</button>
+
+            <div class="footercard">
+              <img src="img/printable-timesheet.svg" class="sidecardimg"></img>
+              <div class="bottomemphasis" id="printableheading">Printable Timesheet</div>
+              <p class="body-text">Generate a timesheet including the below date:</p>
+              <input type="text" placeholder="mm/dd/yyyy" style="margin-bottom: 12px; width: 50%;">
+              <a href='#' class="commonButton" id="printbutton">Get Timesheet</a>
+              
             </div>
           </div>
         </div>
