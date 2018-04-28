@@ -538,6 +538,7 @@
   #commentexamples > img:nth-child(2) {
     order: 1;
     margin: 12px 0px 24px 12px;
+    width: 275px;
   }
 
   #commentyborder {
@@ -553,3 +554,87 @@
     grid-row: 20 / 24;
   }
 }
+
+@media (max-width: 554px) {
+  #commentexamples {
+    margin: 4px 6px 0px 6px;
+  }
+
+  #coworkers {
+    width: 125px;
+  }
+
+  textarea {
+    width: 250px;
+  }
+
+  #comment {
+    display: none;
+  }
+
+  .sidestamp {
+    padding: 30px 10px 30px 10px;
+  }
+
+  #printinput {
+    width: 94%;
+  }
+
+  #clockcard {
+    grid-template-rows: repeat(30, 100px);
+  }
+}
+
+@media (max-width: 503px) {
+  #commentexamples > img:nth-child(2) {
+    width: 225px;
+  }
+
+  #mainclock {
+    flex-direction: column;
+  }
+
+  #coworkers {
+    display: none;
+  }
+
+  #nametext {
+    margin-top: none;
+  }
+
+  #mainclocktext > div:nth-child(2) {
+    margin: 12px 0px 12px 0px;
+  }
+
+  #showTInputs {
+    flex-wrap: wrap;
+  }
+
+  #showTInputs > select {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 438px) {
+  #belowcomments > img:nth-child(1) {
+    width: 200px;
+  }
+
+  .card {
+    padding: 30px 6px 30px 6px; 
+  }
+}
+
+@media (max-width: 390px) {
+  #belowcomments > img:nth-child(1) {
+    width: 185px;
+    margin: 24px 0px 6px 0px;
+  }
+
+  #commentexamples > img:nth-child(2) {
+    width: 160px;
+    margin: 12px 0px 6px 12px;
+  }
+}
+

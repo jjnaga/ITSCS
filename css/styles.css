@@ -470,3 +470,8 @@ li:before {
   color: #fff;
   background: linear-gradient(180deg,#fca7e2 0%, #ed79ca 100%);           
 }
+
+#printinput {
+  margin-bottom: 12px;
+  width: 50%;
+}
