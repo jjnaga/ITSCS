@@ -12,3 +12,5 @@ Goals of new design:
 5. Enhance mobile experience to allow for remote clock-ins in edge cases.
 
 Leveraging *CSS Grid* + *Flexbox* for layout due to lack of need for IE11 support.
+
+View the current version at: file:///C:/Users/Anthony/Github/ITSCS/ITSCS/index.html
