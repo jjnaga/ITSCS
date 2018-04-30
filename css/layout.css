@@ -279,15 +279,13 @@
   }
 
   #belowcomments {
-    grid-row: 7 / 12;
+    grid-row: 7 / 10;
     grid-column: 2 / 20;
     margin-top: 40px;
-    align-items: flex-start;
   }
 
   #belowcomments > img:nth-child(1) {
     margin-left: 0px;
-    margin-top: 24px;
   }
 
   #belowcomments > div:nth-child(2) {
@@ -319,7 +317,7 @@
   }
 }
 
-@media (max-width: 1239px) {
+@media (max-width: 1244px) {
   #belowcomments {
     margin-top: 20px;
   }
@@ -351,10 +349,6 @@
 
   #commentexamples {
     margin-top: -30px;
-  }
-
-  #belowcomments > img:nth-child(1) {
-    margin-top: 60px;
   }
 }
 
@@ -447,6 +441,13 @@
   }
 }
 
+@media (max-width: 835px) {
+  #belowcomments > img:nth-child(1) {
+    width: 200px;
+    margin-right: 25px;
+  }
+}
+
 @media (max-width: 804px) {
   #coworkers {
     width: 200px;
@@ -497,7 +498,7 @@
   }
 }
 
-@media (max-width: 644px) {
+@media (max-width: 658px) {
   #clockcard {
     grid-template-rows: repeat(27, 100px);
   }
@@ -523,6 +524,7 @@
 
   #belowcomments > img:nth-child(1) {
     margin: 24px 0 24px 0px;
+    width: 275px;
   }
 
   #commentexamples {
