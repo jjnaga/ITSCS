@@ -13,4 +13,4 @@ Goals of new design:
 
 Leveraging *CSS Grid* + *Flexbox* for layout due to lack of need for IE11 support.
 
-View the current version at: file:///C:/Users/Anthony/Github/ITSCS/ITSCS/index.html
+View the current version at: https://asyarb.github.io/ITSCS/index.html
