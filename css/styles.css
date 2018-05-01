@@ -12,6 +12,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: #DB6356;
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -153,17 +158,17 @@ label {
 ul, ol {
   margin: 0;
   padding: 0px 0px 0px 24px;
+  list-style: none;
 }
 
-li {
+.listicon {
   margin-bottom: 12px;
   position: relative;
   padding-left: 2em;
-  list-style: none;
   font-size: 16px;
 }
 
-li:before {
+.listicon:before {
   content: ' ';
   width: 20px;
   height: 20px;
