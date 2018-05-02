@@ -13,7 +13,6 @@ body {
 }
 
 a {
-  color: #DB6356;
   text-decoration: none;
 }
 
@@ -157,7 +156,7 @@ label {
 
 ul, ol {
   margin: 0;
-  padding: 0px 0px 0px 24px;
+  padding: 0;
   list-style: none;
 }
 
