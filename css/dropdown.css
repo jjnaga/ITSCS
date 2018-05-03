@@ -299,7 +299,6 @@
     display: none;
   }
   .cd-morph-dropdown .content {
-    padding: 2.2em 1.8em;
     -webkit-transition: -webkit-transform .3s;
     transition: -webkit-transform .3s;
     transition: transform .3s;
@@ -370,6 +369,27 @@
   }
 }
 
+.content a {
+  color: #6772e5;
+}
+
+.content a:hover, #downloads .secondarygrp a:hover, #toollinks a:hover, #toolsecondary a:hover {
+  color: #32325d;
+}
+
+.primarygrp {
+  padding: 30px 35px;
+}
+
+.secondarygrp {
+  padding: 20px 35px;
+  background: #f6f9fc;
+}
+
+.secondarygrp li {
+  padding: 8px 0px;
+}
+
 .linkcontainer {
   display: block;
 }
@@ -400,6 +420,10 @@
 .linkicon > img {
   width: 17px;
   height: 17px;
+  margin: 0 12px -2px -1px;
+}
+
+.linkicon > svg {
   margin: 0 12px -3px -1px;
 }
 
@@ -430,4 +454,46 @@
   letter-spacing: .025em;
   margin: 0 0 3px;
   color: #8898aa;
+}
+
+#downloads h3 {
+  color: #24b47e;
+}
+
+#downloads .secondarygrp a {
+  color: #24b47e;
+}
+
+.waivers {
+  font-size: 15px;
+  line-height: 26px;
+  margin: 18px 20px 10px 33px;
+  display: flex;
+  white-space: nowrap;
+  flex-direction: column;;
+}
+
+.waivers a {
+  color: #32b783;
+  font-weight: 500;
+}
+
+.hover-light {
+  fill: #8898aa;
+}
+
+.hover-dark {
+  fill: #32325d;
+}
+
+#toollinks li {
+  padding: 8px 0;
+}
+
+#toollinks a {
+  color: #3396d3;
+}
+
+#toolsecondary a {
+  color: #3396d3;
 }
