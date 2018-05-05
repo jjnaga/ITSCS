@@ -373,7 +373,7 @@
   color: #6772e5;
 }
 
-.content a:hover, #downloads .secondarygrp a:hover, #toollinks a:hover, #toolsecondary a:hover, #userdocs a:hover, #administration a:hover {
+.content a:hover, #downloads .secondarygrp a:hover, #toollinks a:hover, #toolsecondary a:hover, #userdocs a:hover, #administration a:hover, #waivers a:hover {
   color: #32325d;
 }
 
@@ -456,15 +456,11 @@
   color: #8898aa;
 }
 
-#downloads h3 {
+#downloads h3, #downloads .secondarygrp a, #downloads a {
   color: #24b47e;
 }
 
-#downloads .secondarygrp a {
-  color: #24b47e;
-}
-
-.waivers {
+#waivers {
   font-size: 15px;
   line-height: 26px;
   margin: 18px 20px 10px 33px;
@@ -473,7 +469,7 @@
   flex-direction: column;;
 }
 
-.waivers a {
+#waivers a {
   color: #32b783;
   font-weight: 500;
 }
@@ -490,7 +486,7 @@
   padding: 8px 0;
 }
 
-#toolsecondary a, .titlecolor {
+#tools a, .titlecolor {
   color: #3396d3;
 }
 
