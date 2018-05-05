@@ -373,7 +373,7 @@
   color: #6772e5;
 }
 
-.content a:hover, #downloads .secondarygrp a:hover, #toollinks a:hover, #toolsecondary a:hover {
+.content a:hover, #downloads .secondarygrp a:hover, #toollinks a:hover, #toolsecondary a:hover, #userdocs a:hover, #administration a:hover {
   color: #32325d;
 }
 
@@ -398,7 +398,7 @@
   margin-left: -28px;
 }
 
-.linkcontainer:hover .linktitle, .linkcontainer .linksub {
+#reps .linkcontainer:hover .linktitle, #userdocs .linkcontainer:hover .linktitle, .linkcontainer:hover .linktitle, .linkcontainer .linksub {
   color: #32325d;
 }
 
@@ -490,10 +490,14 @@
   padding: 8px 0;
 }
 
-#toollinks a {
+#toolsecondary a, .titlecolor {
   color: #3396d3;
 }
 
-#toolsecondary a {
-  color: #3396d3;
+#askus h3, #reps h3, #userdocs a {
+  color: #e39f48;
+}
+
+.admincolor, #administration a {
+  color: #b76ac4;
 }
