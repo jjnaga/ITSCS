@@ -4,7 +4,6 @@
 .cd-morph-dropdown {
   position: relative;
   height: 60px;
-  background-color: #FFFFFF;
 }
 .cd-morph-dropdown::before {
   /* never visible - used in JS to check mq */
@@ -82,7 +81,7 @@
   top: 60px;
   left: 0;
   width: 100%;
-  padding: 1.2em 5%;
+  padding-top: 12px;
   box-shadow: inset 0 1px 0 #e6e6e6;
   background-color: #FFFFFF;
 }
@@ -97,6 +96,7 @@
   font-size: 22px;
   color: #1A1A1A;
   margin-bottom: .8em;
+  margin-left: 6px;
 }
 .cd-morph-dropdown .content li::after {
   clear: both;
