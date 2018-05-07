@@ -149,7 +149,7 @@
   font-size: 1.3rem;
   margin: 20px 0 10px 14px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
   .cd-morph-dropdown {
     position: absolute;
     height: 80px;
@@ -373,7 +373,7 @@
   color: #6772e5;
 }
 
-.content a:hover, #downloads .secondarygrp a:hover, #toollinks a:hover, #toolsecondary a:hover, #userdocs a:hover, #administration a:hover, #waivers a:hover {
+.content a:hover, #downloads .secondarygrp a:hover, #toollinks a:hover, #toolsecondary a:hover, #userdocs a:hover, #administration a:hover, #waivers a:hover, #logoutlabel:hover, #reps .linkcontainer:hover .linktitle, #userdocs .linkcontainer:hover .linktitle, .linkcontainer:hover .linktitle, .linkcontainer .linksub {
   color: #32325d;
 }
 
@@ -396,10 +396,6 @@
 
 .linktitle .withicon {
   margin-left: -28px;
-}
-
-#reps .linkcontainer:hover .linktitle, #userdocs .linkcontainer:hover .linktitle, .linkcontainer:hover .linktitle, .linkcontainer .linksub {
-  color: #32325d;
 }
 
 .linktitle {
@@ -496,4 +492,9 @@
 
 .admincolor, #administration a {
   color: #b76ac4;
+}
+
+#logoutlabel {
+  color: #6772e5;
+  font-weight: bold;
 }

@@ -49,30 +49,38 @@
     <div class="contain">
 
       <header class="cd-morph-dropdown">
+        <a href="#">
+          <img src="img/its.svg" id="logo">
+        </a>
+
         <a href="#0" class="nav-trigger">Open Nav
           <span aria-hidden="true"></span>
         </a>
       
         <nav class="main-nav">
           <ul>
-            <li class="has-dropdown gallery" data-content="tools">
+            <li class="has-dropdown" data-content="tools">
               <a href="#0">Tools</a>
             </li>
       
-            <li class="has-dropdown links" data-content="downloads">
+            <li class="has-dropdown" data-content="downloads">
               <a href="#0">Downloads</a>
             </li>
       
-            <li class="has-dropdown button" data-content="documentation">
+            <li class="has-dropdown" data-content="documentation">
               <a href="#0">Documentation</a>
             </li>
 
-            <li class="has-dropdown button" data-content="userdocs">
+            <li class="has-dropdown" data-content="userdocs">
               <a href="#0">User Docs</a>
             </li>
 
-            <li class="has-dropdown button" data-content="administration">
+            <li class="has-dropdown" data-content="administration">
               <a href="#0">Administration</a>
+            </li>
+
+            <li class="has-dropdown" data-content="none">
+              <a href="#" >Logout</a>
             </li>
           </ul>
         </nav>
@@ -80,6 +88,14 @@
         <div class="morph-dropdown-wrapper">
           <div class="dropdown-list">
             <ul>
+              <li id="none" class="dropdown links">
+                <a href="#0" class="label" id="logoutlabel">Logout</a>
+
+                <div class="content">
+                  
+                </div>
+              </li>
+
               <li id="tools" class="dropdown links">
                 <a href="#0" class="label">Tools</a>
       

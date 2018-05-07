@@ -482,3 +482,8 @@ ul, ol {
   margin-bottom: 12px;
   width: 50%;
 }
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
