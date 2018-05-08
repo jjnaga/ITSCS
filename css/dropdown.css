@@ -149,7 +149,17 @@
   font-size: 1.3rem;
   margin: 20px 0 10px 14px;
 }
-@media only screen and (min-width: 1100px) {
+
+.cd-morph-dropdown .main-nav > ul > li > a {
+  padding: 0 1.8em;
+}
+
+@media (max-width: 1200px) {
+  .cd-morph-dropdown .main-nav > ul > li > a {
+  padding: 0 .6em;
+}
+}
+@media only screen and (min-width: 955px) {
   .cd-morph-dropdown {
     position: absolute;
     height: 80px;
@@ -178,7 +188,6 @@
 /* Dropdown header text */
   .cd-morph-dropdown .main-nav > ul > li > a {
     display: block;
-    padding: 0 1.8em;
     height: 70px;
     line-height: 70px;
     color: #32325d;
