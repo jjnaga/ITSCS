@@ -118,7 +118,7 @@
 
                     <a href="#" class="linkcontainer">
                       <h3 class="linktitle linkicon titlecolor">
-                        <img src="img/Simp.svg"> SIMP
+                        <img src="img/simp.svg"> SIMP
                       </h3>
                       <span class="linksub" style="margin-bottom: 24px;">Access our ticket system.</span>
                     </a>
@@ -476,7 +476,7 @@
           <h1 class='section-title' style="align-self: center; text-align: center;">View your Timesheets</h1>
 
           <div id="timesheetcards">
-            <div class="footercard">
+            <div class="footercard" id="historycard">
               <img src="img/show-timesheet.svg" class="sidecardimg"></img>
               <div class="bottomemphasis" id="timesheetheading">Clock-In/Out History</div>
               <div id="showTInputs">
@@ -489,15 +489,15 @@
               </div>
               
               <div style="margin-bottom: 12px;">
-                <input type="checkbox" name="display" value="IP" id="displayIP">
+                <input type="checkbox" id="displayIP">
                 <label for="displayIP">Display IP</label>
-                <input type="checkbox" name="display" value="comment" id="displayComments">
+                <input type="checkbox" id="displayComments">
                 <label for="displayComments">Display Comments</label>
               </div>
               <a href='#' class="commonButton" id="showbutton">Get History</a>
             </div>
 
-            <div class="footercard">
+            <div class="footercard" id="tcard">
               <img src="img/printable-timesheet.svg" class="sidecardimg"></img>
               <div class="bottomemphasis" id="printableheading">Printable Timesheet</div>
               <p class="body-text">Generate a timesheet including the below date:</p>

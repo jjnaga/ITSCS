@@ -6,6 +6,11 @@ header {
   z-index: 2;
 }
 
+form {
+  display: contents;
+  margin: 0;
+}
+
 body {
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -72,6 +77,11 @@ input[type="text"]:focus {
   background-color: transparent;
   color: #4d4e6d!important;
   box-shadow: 0 0 0 1px #e4effa;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
 }
 
 select {
