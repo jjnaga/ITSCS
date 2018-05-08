@@ -386,8 +386,17 @@ ul, ol {
   background: linear-gradient(180deg, #f5515f 0%,#A1051D 100%);
 }
 
+#clockoutButton {
+  color: #fff;
+  background: linear-gradient(180deg, #3ecf8e 0%,#1a965f 100%);
+}
+
 #clockedin {
   color: #24b47e;
+}
+
+#clockedout {
+  color: #c81a1a;
 }
 
 #comment {
