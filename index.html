@@ -399,7 +399,7 @@
                 <div class="body-text" id="comment">Have a weird clock-in/out?
                   <span id="commentbold">Write a comment!</span>
                 </div>
-                <textarea class="clockcomments" id="clockcomment" placeholder="Write your comment here!"></textarea>
+                <textarea class="clockcomments" id="clockcomment" placeholder="Write your comment here!" title=""></textarea>
             </div>
           </div>
           <div>
@@ -508,12 +508,31 @@
           </div>
         </div>
 
+        <div id="tooltip" style="display: none;">
+          <img src="img/validation-error.svg" id="warningicon">
+          <div>Don't forget to include your scheduled work hours in your comment.<br><br><span class="muted-text">Need help? See the examples below.</span></div>
+        </div>
+
       </section>
     </div>
 
+    <script src="https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/dropdown.js"></script>
     <script type="text/javascript" src="js/misc.js"></script>
+
+    <script>
+      tippy('.clockcomments', {
+        trigger: 'click',
+        animation: 'perspective',
+        placement: 'right',
+        maxWidth: '220px',
+        delay: 100,
+        duration: 600,
+        html: '#tooltip',
+        theme: 'warning'
+      })
+    </script>
 
   </body>
 </html>

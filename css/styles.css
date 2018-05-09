@@ -506,3 +506,32 @@ ul, ol {
   width: 50px;
   height: 50px;
 }
+
+.tippy-tooltip.warning-theme {
+  background-color: #fff;
+  border: 1px solid #ffa27b;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.18);
+
+  color: hsl(0, 0%, 37%);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.tippy-tooltip.warning-theme .tippy-content {
+  display: flex;
+}
+
+#warningicon {
+  align-self: flex-start;
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+
+.tippy-tooltip.warning-theme .tippy-backdrop {
+  background-color: transparent;
+}
