@@ -436,6 +436,12 @@
   }
 }
 
+@media (max-width: 955px) {
+  .tippy-popper {
+    display: none;
+  }
+}
+
 @media (max-width: 884px) {
   #commentexamples > img:nth-child(2) {
     margin-left: 18px;
