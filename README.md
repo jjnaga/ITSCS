@@ -1,3 +1,20 @@
+# ITS Main Page
+###### ITS Main Page revamp
+
+Revamp of ITS main page.  Goal of revamp is to establish a better hiearchy of actions on the main HDSupport home page as well as to establish a better convention of current staff/students being out.
+
+Goals of home page redesign
+
+1. Establish item hierarchy.
+2. Redesign call-to-action buttons to be more prominent
+3. Better leverage user states/roles to dynamically display content intended for labs/help desk
+4. Continue to build easily sustainable and modifable layout to allow for rapid changes/additions/removal via *CSS Grid*
+5. Enhance mobile experience to allow for better navigation via phones/tablets.
+
+Leveraging *CSS Grid* + *Flexbox* for layout due to lack of need for IE11 support.
+
+View the current version at: https://asyarb.github.io/ITSCS/main.html
+
 # ITSCS
 ###### ITS Clock-in/out revamp
 
