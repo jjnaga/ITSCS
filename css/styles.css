@@ -103,6 +103,31 @@ select {
   -webkit-appearance: none;
 }
 
+table {
+  background-color: #fff;
+  border-spacing: 0;
+  border-radius: 6px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+th {
+  font-weight: 600;;
+  text-align: left;
+  color: #32325d;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #f6f9fc;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #525f7f;
+  font-size: 16px;
+}
+
 [type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
     position: absolute;
     visibility: hidden;
@@ -505,6 +530,9 @@ ul, ol {
 #logo {
   width: 50px;
   height: 50px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
 }
 
 .tippy-tooltip.warning-theme {

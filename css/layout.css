@@ -166,12 +166,6 @@
   margin-left: 12px;
 }
 
-#logo {
-  position: absolute;
-  top: 8px;
-  left: 12px;
-}
-
 @media (max-width: 1879px) {
   #whitebackground {
     margin-bottom: -50px;

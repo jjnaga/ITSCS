@@ -1,0 +1,13 @@
+.listTimeFlex {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listTimeFlex > img:nth-child(1) {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
