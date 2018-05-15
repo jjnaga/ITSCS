@@ -49,9 +49,17 @@
 
         $username = $_POST["username"];
 
-        $month = (int) $_POST["month"];
-        $day   = (int) $_POST["day"];
-        $year  = (int) $_POST["year"];
+        $date = explode("/", $_POST["date"]);
+
+        $month = (int) $date[0];
+        $day   = (int) $date[1];
+
+        if (strlen($date[2]) == 2) {
+            $date[2] = "20" . $date[2]; 
+        }
+
+        $year  = (int) $date[2];
+        
 
         if($_POST["ctype"] == "all")
             $result = mysql_query("Select * from log where username=\"" . $username . "\" and year >=\"" . $year . "\"", $db);
@@ -61,6 +69,17 @@
             $result = mysql_query("Select * from log where action=\"out\" and username=\"" . $username . "\" and year >=\"" . $year . "\"", $db);
 
     ?>
+
+      <div class="stripes">
+          <span></span>
+          <span></span>
+      </div>
+
+      <div class="stripe">
+          <span></span>
+          <span></span>
+      </div>
+    
     <div class="listTimeFlex">
         <img src="img/listtimes.svg">
         <h1 class='section-title'>History for: <b><?php echo $username; ?></b></h1>

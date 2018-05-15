@@ -113,12 +113,12 @@ table {
 th {
   font-weight: 600;;
   text-align: left;
-  color: #32325d;
+  color: #fff;
   text-transform: uppercase;
   font-size: 16px;
   padding: 15px;
   border-bottom: 1px solid #e6e6e6;
-  background-color: #f6f9fc;
+  background-color: #7795f8;
 }
 
 td {
@@ -126,6 +126,7 @@ td {
   border-bottom: 1px solid #e6e6e6;
   color: #525f7f;
   font-size: 16px;
+  font-weight: 500;
 }
 
 [type="checkbox"]:checked, [type="checkbox"]:not(:checked) {

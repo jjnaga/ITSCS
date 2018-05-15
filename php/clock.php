@@ -333,7 +333,7 @@ if(isset($_POST["action"])) {
               <img src="img/show-timesheet.svg" class="sidecardimg"></img>
               <div class="bottomemphasis" id="timesheetheading">Clock-In/Out History</div>
               <div id="showTInputs">
-                <input type="text" placeholder="(mm/dd/yyyy)">
+                <input type="text" name="date" placeholder="mm/dd/yyyy">
                 <select name="ctype">
                   <option value="all">All Actions</option>
                   <option value="logins">Clock-Ins</option>
@@ -358,7 +358,7 @@ if(isset($_POST["action"])) {
               <img src="img/printable-timesheet.svg" class="sidecardimg"></img>
               <div class="bottomemphasis" id="printableheading">Printable Timesheet</div>
               <p class="body-text">Generate a timesheet including the below date:</p>
-              <input id="printinput" type="text" placeholder="mm/dd/yyyy">
+              <input id="printinput" name="date" type="text" placeholder="mm/dd/yyyy">
               <input type="submit" name="submit" class="commonButton" id="printbutton" value="Get Timesheet"></input>
             </div>
             <input type="hidden" name="username" value="<?php echo $_SESSION["username"]; ?>" />
