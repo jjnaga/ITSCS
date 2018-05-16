@@ -3,3 +3,15 @@
   grid-template-rows: repeat(16, 100px);
   grid-template-columns: repeat(20, 5vw);
 }
+
+#heroBG {
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(20, 64px);
+  grid-template-columns: repeat(22, 1fr);
+  top: -215px;
+  left: 0;
+  right: 0;
+  transform: skewY(-12deg);
+  background-color: #f6f9fc;
+}
