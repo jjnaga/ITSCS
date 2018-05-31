@@ -282,7 +282,7 @@ ul, ol {
   display: flex;
   color: #fff;
   font-size: 30px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 12px 0;
   text-transform: uppercase;
   letter-spacing: .04em;

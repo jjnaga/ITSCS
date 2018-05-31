@@ -78,7 +78,7 @@
   font-weight: 700;
   color: #c3c2b9;
   outline: 0;
-  background: #f6f9fc;
+  background: #fff;
   padding: 8px 0px;
 }
 
@@ -136,8 +136,13 @@
 
 .cd-tabs__content li.cd-selected {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   animation: cd-fade-in 1s;
+}
+
+.welcome-sidetext > div {
+  width: 100%;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
