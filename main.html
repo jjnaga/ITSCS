@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="css/main_layout.css">
+  <link rel="stylesheet" href="css/main_out.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700" rel="stylesheet">
 
 </head>
 
@@ -365,13 +365,61 @@
       </div>
       <div>
         <div class="welcome-card">
+          <div class="cd-tabs js-cd-tabs">
+            <nav>
+              <ul class="cd-tabs__navigation js-cd-navigation">
+                <li>
+                  <a data-content="today" class="cd-selected numbers" href="#0">5/30</a>
+                </li>
+                <li>
+                  <a data-content="tomorrow" href="#0" class="numbers">5/31</a>
+                </li>
+                <li>
+                  <a data-content="more" href="#0" class="numbers">6/1</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="welcome-sideheading">
+              <h6>Staff</h6>
+              <h6>Students</h6>
+            </div>
           
+            <ul class="cd-tabs__content js-cd-content">
+              <li data-content="today" class="cd-selected welcome-sidetext">
+                <div>
+                  <div>Anthony Yarbrough (Sick)</div>
+                  <div>Ryan Carvalho (Vacation)</div>
+                  <div>Allison Kawano (Sick)</div>
+                  <div>Michael Valentino (Dead)</div>
+                </div>
+
+                <div>
+                  <div>Sam Rasay (Sick)</div>
+                  <div>Rylan Bautista (Sick)</div>
+                  <div>Damien Lim (R. Off)</div>
+                </div>
+              </li>
+          
+              <li data-content="tomorrow" class="welcome-sidetext">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a voluptatibus, ex odit totam cumque nihil eos asperiores
+                ea, labore rerum. Doloribus tenetur quae impedit adipisci, laborum dolorum eaque ratione quaerat, eos dicta consequuntur
+                atque ex facere voluptate cupiditate incidunt.
+              </li>
+
+              <li data-content="more" class="welcome-sidetext">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a voluptatibus, ex odit totam cumque nihil eos asperiores ea,
+                labore rerum. Doloribus tenetur quae impedit adipisci, laborum dolorum eaque ratione quaerat, eos dicta consequuntur atque
+                ex facere voluptate cupiditate incidunt.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="peopleOut">
-
+      
     </section>
 
     <section id="actionButtons">
@@ -379,14 +427,9 @@
     </section>
   </div>
 
- 
-
-
-
-
-
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/dropdown.js"></script>
+  <script type="text/javascript" src="js/main_out.js"></script>
   <script type="text/javascript" src="js/misc.js"></script>
 
 </body>
