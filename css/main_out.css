@@ -76,9 +76,9 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #c3c2b9;
+  color: #32325d;
   outline: 0;
-  background: #fff;
+  background: #ece5db;
   padding: 8px 0px;
 }
 
@@ -88,9 +88,10 @@
 }
 
 .cd-tabs__navigation a.cd-selected {
-  background-color: #87bbfd !important;
-  /* box-shadow: inset 0 3px 0 #005381; */
+  background-color: #cec4b0 !important;
+  box-shadow: inset 0 5px 0 #696969;
   color: #32325d;
+  border-radius: 3px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -100,7 +101,7 @@
   .cd-tabs__navigation a {
   }
   .cd-tabs__navigation a.cd-selected {
-   /* box-shadow: inset 0 3px 0 #005381; */
+    box-shadow: inset 0 5px 0 #696969;
   }
 }
 

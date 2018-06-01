@@ -255,7 +255,7 @@ ul, ol {
 }
 
 .welcome-card {
-  background: #87bbfd;
+  background: #cec4b0;
   border-radius: 8px;
   overflow: hidden;
   width: 566px;
@@ -286,6 +286,15 @@ ul, ol {
   padding: 12px 0;
   text-transform: uppercase;
   letter-spacing: .04em;
+}
+
+.welcome-button {
+  background-color:  #fff;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  border-radius: 4px;
+  width: 64px;
+  height: 64px;
 }
 
 .card {
