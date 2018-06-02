@@ -297,9 +297,9 @@ ul, ol {
   border-radius: 8px;
   overflow: hidden;
   color: #6772e5;
-  margin-bottom: 20px;
   align-items: center;
   height: 100px;
+  max-width: 250px;
 }
 
 .welcome-button:hover {
