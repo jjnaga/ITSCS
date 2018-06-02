@@ -289,12 +289,32 @@ ul, ol {
 }
 
 .welcome-button {
-  background-color:  #fff;
-  padding: 30px;
+  display: flex;
+  transition: .2s;
+  background-color: #fff;
+  padding: 18px;
   box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-  border-radius: 4px;
-  width: 64px;
-  height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #6772e5;
+  margin-bottom: 20px;
+  align-items: center;
+  height: 100px;
+}
+
+.welcome-button:hover {
+  transform: translateY(-2px);
+  color: #32325d !important;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
+}
+
+.welcome-button:active {
+  transform: translateY(2px);
+}
+
+.welcome-sideimg {
+  width: 100px;
+  margin-right: 24px;
 }
 
 .card {
