@@ -387,3 +387,9 @@
     top: 20px;
   }
 }
+
+@media (max-width: 371px) {
+  .clocksideimg {
+    top: 36px;
+  }
+}
