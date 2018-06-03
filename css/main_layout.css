@@ -62,11 +62,10 @@
 
 .welcome-row {
   display: flex;
-  justify-content: space-between;
 }
 
 #namesAndRoles {
-  grid-row: 2 / 9;
+  grid-row: 2 / 10;
   grid-column: 5 / 17;
   display: flex;
   justify-content: space-around;
@@ -206,4 +205,185 @@
 .welcome-sideheading > h6 {
   text-align: center;
   width: 100%;
+}
+
+@media (max-width: 1160px) {
+  .welcome-card {
+    width: 500px;
+  }
+
+  #namesAndRoles {
+    grid-column: 2 / 20;
+  }
+}
+
+@media (max-width: 1100px) {
+  #nameandbuttons {
+    align-items: center;
+  }
+
+  #clockcard {
+    width: 250px;
+  }
+
+  .clocksideimg {
+    left: -38px;
+    top: -6px;
+  }
+
+  .welcome-button {
+    width: 210px;
+  }
+}
+
+@media (max-width: 1015px) {
+  #namesAndRoles {
+    justify-content: flex-start;
+    grid-column: 1 / 21;
+  }
+
+  #nameandbuttons {
+    margin-left: 8px;
+  }
+
+  #ncontain {
+    width: 350px;
+  }
+
+  .welcome-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .wcardcontainer {
+    margin-left: -84px;
+  }
+}
+
+@media (max-width: 930px) {
+  .welcome-card {
+    width: 470px; 
+  }
+}
+
+@media (max-width: 900px) {
+  #namesAndRoles {
+    margin-top: 0;
+    grid-row: 2 / 14;
+    flex-direction: column;
+    grid-column: 4 / 18;
+  }
+
+  #nameandbuttons {
+    justify-content: space-around;
+    margin-left: 0;
+  }
+
+  .welcome-card {
+    width: 566px;
+    transform: none;
+  }
+
+  .wcardcontainer {
+    margin-left: 0;
+    align-self: center;
+    margin-top: 48px;
+  }
+
+  #ncontain, #clockcard {
+    margin-bottom: 48px;
+    width: auto;
+  }
+
+  .clocksideimg {
+    top: -23px;
+  }
+
+  .welcome-button: {
+    width: auto;
+  }
+}
+
+@media (max-width: 725px) {
+  #namesAndRoles {
+    grid-column: 3 / 19;
+  }
+}
+
+@media (max-width: 633px) {
+  #namesAndRoles {
+    grid-column: 2 / 20;
+  }
+}
+
+@media (max-width: 577px) {
+  .welcome-card {
+    width: 500px;
+  }
+}
+
+@media (max-width: 503px) {
+  .bottomemphasis {
+    text-align: center;
+  }
+
+  .welcome-button {
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .welcome-sideimg {
+    margin-bottom: 8px;
+    height: 100px;
+    margin-right: 0;
+}
+
+@media (max-width: 492px) {
+  .clocksideimg {
+    width: 150px;
+    height: 150px;
+    left: -6px;
+    top: 9px;
+  }
+
+  .welcome-card {
+    width: 415px;
+  }
+
+  .welcome-sidetext {
+    font-size: 15px;
+  }
+
+  .welcome-sideheading > h6 {
+    margin: 0 4px;
+  }
+
+  .cd-tabs__content li {
+    padding: 15px 4px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  #staffout {
+    text-align: left;
+  }
+
+  #studentsout {
+    text-align: right;
+  }
+}
+
+@media (max-width: 415px) {
+  .welcome-card {
+    width: 370px;
+  }
+}
+
+@media (max-width: 389px) {
+  .clocksideimg {
+    top: 20px;
+  }
 }

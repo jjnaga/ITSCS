@@ -8,8 +8,8 @@
 
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/dropdown.css">
-  <link rel="stylesheet" href="css/main_layout.css">
   <link rel="stylesheet" href="css/main_out.css">
+  <link rel="stylesheet" href="css/main_layout.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700" rel="stylesheet">
 
@@ -358,23 +358,23 @@
   <div class="contain">
     <section id="namesAndRoles">
       <div id="nameandbuttons">
-        <div>
+        <div id="ncontain">
           <h2 class="welcome-text">Welcome Anthony!
             <br>
-            <span class="welcome-accent">You are Staff and an Administrator.</span>
+            <span class="welcome-accent">You are Staff and an Administrator and a Lab/Help Desk Manager.</span>
           </h2>
         </div>
 
         
         <a class="welcome-clock" id="clockcard" href="#">
           <img src="img/login.svg" class="clocksideimg">
-          <div class="bottomemphasis">Clock-In/Out -></div>
+          <div class="bottomemphasis">Clock-In/Out</div>
           <span class="body-text">Clock in and out for your scheduled shift or view your timesheets.</span>
         </a>
 
         <div>
           <div class="welcome-row" style="margin-bottom: 20px;">
-            <a class="welcome-button" href="#" style="color: #24b47e;">
+            <a class="welcome-button" href="#" style="color: #24b47e; margin-right: 12px;">
               <img class="welcome-sideimg" src="img/roster.svg">
               <div>
                 <div class="bottomemphasis">Schedules</div>
@@ -392,7 +392,7 @@
           </div>
           
           <div class="welcome-row">
-            <a class="welcome-button" href="#" style="color: #3396d3;">
+            <a class="welcome-button" href="#" style="color: #3396d3; margin-right: 12px;">
               <img class="welcome-sideimg" src="img/chat.svg">
               <div>
                 <div class="bottomemphasis">Slack</div>
@@ -411,7 +411,7 @@
         </div>
         
       </div>
-      <div>
+      <div class="wcardcontainer">
         <div class="welcome-card">
           <div class="cd-tabs js-cd-tabs">
             <nav>
@@ -429,20 +429,20 @@
             </nav>
 
             <div class="welcome-sideheading">
-              <h6>Staff</h6>
-              <h6>Students</h6>
+              <h6 id="staffout">Staff</h6>
+              <h6 id="studentsout">Students</h6>
             </div>
           
             <ul class="cd-tabs__content js-cd-content">
               <li data-content="today" class="cd-selected welcome-sidetext">
-                <div>
+                <div id="staffout">
                   <div>Anthony Yarbrough (Sick)</div>
                   <div>Ryan Carvalho (Vacation)</div>
                   <div>Allison Kawano (Sick)</div>
                   <div>Michael Valentino (Dead)</div>
                 </div>
 
-                <div>
+                <div id="studentsout">
                   <div>Sam Rasay (Sick)</div>
                   <div>Rylan Bautista (Sick)</div>
                   <div>Damien Lim (Failed 311)</div>
