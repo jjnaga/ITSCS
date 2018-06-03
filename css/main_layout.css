@@ -299,7 +299,7 @@
     top: -23px;
   }
 
-  .welcome-button: {
+  .welcome-button {
     width: auto;
   }
 }
@@ -339,6 +339,7 @@
     margin-bottom: 8px;
     height: 100px;
     margin-right: 0;
+  }
 }
 
 @media (max-width: 492px) {
