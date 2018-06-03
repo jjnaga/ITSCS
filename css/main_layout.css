@@ -323,6 +323,10 @@
 }
 
 @media (max-width: 503px) {
+  #namesAndRoles {
+    grid-row: 2 / 17;
+  }
+
   .bottomemphasis {
     text-align: center;
   }
