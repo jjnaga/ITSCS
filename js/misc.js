@@ -8,3 +8,12 @@ $('#docgrp').hover(
         $('#vector2').removeClass('hover-dark');
     }
 );
+
+$('#clockcard').hover(
+    function () {
+        $('.arrow').addClass('hover-dark');
+    },
+    function () {
+        $('.arrow').removeClass('hover-dark');
+    }
+);

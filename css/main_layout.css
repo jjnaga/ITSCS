@@ -64,6 +64,16 @@
   display: flex;
 }
 
+.welcome-icon {
+  width: 18px;
+  position: relative;
+  top: 2px;
+}
+
+.arrow {
+  transition: .2s;
+}
+
 #namesAndRoles {
   grid-row: 2 / 10;
   grid-column: 5 / 17;
